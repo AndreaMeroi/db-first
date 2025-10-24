@@ -1,17 +1,21 @@
 ## Table name: (cars)
 
-- id
-- price
-- brand
-- model
-- color
-- engine displacement
-- 4WD
-- RWD
-- front 
-- plate number
-- registration year 
-- owners number
-- ccidents
-- description 
-- notesß
+- id: INT default
+- price: FLOAT (6,2)
+- brand: VARCHAR (30)
+- model: VARCHAR (30)
+- color: VARCHAR (30)
+- doors: VARCHAR ()
+- seats: VARCHAR (2)
+- body type: VARCHAR (10)
+- fuel type: VARCHAR (10)
+- engine size: CHAR (3)
+- gearbox AUTO: TINYINT 
+- gearbox MANUAL: TINYINT  
+- mileage: VARCHAR (6)
+- 4WD: TINYINT
+- RWD: TINYINT
+- plate number: CHAR (7)
+- registration year: YEAR
+- description: TEXT
+- notes: TEXT
