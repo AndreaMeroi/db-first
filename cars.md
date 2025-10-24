@@ -1,21 +1,21 @@
 ## Table name: (cars)
 
-- id: INT default
-- price: FLOAT (6,2)
-- brand: VARCHAR (30)
-- model: VARCHAR (30)
-- color: VARCHAR (30)
-- doors: VARCHAR ()
-- seats: VARCHAR (2)
-- body type: VARCHAR (10)
-- fuel type: VARCHAR (10)
-- engine size: CHAR (3)
-- gearbox AUTO: TINYINT 
-- gearbox MANUAL: TINYINT  
-- mileage: VARCHAR (6)
-- 4WD: TINYINT
-- RWD: TINYINT
-- plate number: CHAR (7)
-- registration year: YEAR
-- description: TEXT
-- notes: TEXT
+- id: INT AI NOT NULL UNIQUE (PRIMARY KEY)
+- price: FLOAT (6,2) NOT NULL
+- brand: VARCHAR (30) NOT NULL
+- model: VARCHAR (30) NOT NULL
+- color: VARCHAR (30) NULL
+- doors: VARCHAR (2) NULL 
+- seats: VARCHAR (2) NULL
+- body type: VARCHAR (10) NULL
+- fuel type: VARCHAR (10) NOT NULL
+- engine size: CHAR (3) NULL
+- gearbox AUTO: TINYINT NOT NULL  
+- gearbox MANUAL: TINYINT  NOT NULL
+- mileage: VARCHAR (6) NOT NULL
+- 4WD: TINYINT NOT NULL
+- RWD: TINYINT NOT NULL 
+- plate number: CHAR (7) NOT NULL UNIQUE
+- registration year: YEAR NOT NULL
+- description: TEXT NULL
+- notes: TEXT NULL
