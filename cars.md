@@ -1,21 +1,26 @@
-## Table name: (cars)
+## Table name: cars
 
-- id: INT AI NOT NULL UNIQUE (PRIMARY KEY)
-- price: FLOAT (6,2) NOT NULL
-- brand: VARCHAR (30) NOT NULL
-- model: VARCHAR (30) NOT NULL
-- color: VARCHAR (30) NULL
-- doors: VARCHAR (2) NULL 
-- seats: VARCHAR (2) NULL
-- body type: VARCHAR (10) NULL
-- fuel type: VARCHAR (10) NOT NULL
-- engine size: CHAR (3) NULL
+- id: PK BIGINT AI NOT NULL UNIQUE 
+- price: DECIMAL (8,2) NULL
+- brand: VARCHAR (50) NOT NULL
+- model: VARCHAR (50) NOT NULL INDEX
+- color: VARCHAR (50) NULL
+- doors: TINYINT NULL 
+- seats: TINYINT NULL
+- body_type: VARCHAR (10) NULL
+- fuel_type: VARCHAR (10) NOT NULL
+- engine_size: SMALL INT NULL
+- horse_power: CHAR (3)
 - gearbox AUTO: TINYINT NOT NULL  
-- gearbox MANUAL: TINYINT  NOT NULL
-- mileage: VARCHAR (6) NOT NULL
-- 4WD: TINYINT NOT NULL
-- RWD: TINYINT NOT NULL 
-- plate number: CHAR (7) NOT NULL UNIQUE
-- registration year: YEAR NOT NULL
+- KM: FLOAT (8,0) NULL
+- traction: VARCHAR (20) NULL 
+- plate number: CHAR (7) NULL UNIQUE
+- vin: CHAR (17) UNIQUE NULL
+- owners: TINYINT NULL
+- year: YEAR NOT NULL INDEX
+- mont: MONTH NULL
+- status: VARCHAR (20) NULL 
+- is_available: TINYINT DEFAULT(0)
 - description: TEXT NULL
 - notes: TEXT NULL
+Ui
